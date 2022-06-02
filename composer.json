@@ -1,0 +1,13 @@
+{
+  "name": "ctyurk15/lightstone",
+  "description": "Simple & light php-framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yurii Hrytsak"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  }
+}

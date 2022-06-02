@@ -1,0 +1,10 @@
+{
+  "debug_mode": true,
+  "database":
+  {
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "dbname": "database_name"
+  }
+}

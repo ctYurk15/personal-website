@@ -1,0 +1,36 @@
+.navigation-back-container
+{
+    width: 100%;
+    font-size: 1.5em;
+    padding: 5px;
+    height: 5vh;
+}
+
+.navigation-back-container a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: #c8bcae;
+}
+
+.navigation-back-container a:hover
+{
+    text-shadow: 1px 1px 4px #c8bcae;
+    transition: 0.3s ease;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.bio-container
+{
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.bio-avatar-img
+{
+    margin: 25px;
+}

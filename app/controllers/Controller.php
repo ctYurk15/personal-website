@@ -15,7 +15,7 @@ class Controller
 
     public function home()
     {
-        $this->viewer->set('TITLE', 'Hello developer!');
+        $this->viewer->set('TITLE', 'Yurii Hrytsak');
         echo $this->viewer->content('main');
     }
 

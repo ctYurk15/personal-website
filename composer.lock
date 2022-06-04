@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f550002425daf2a5cefd8365a39a1f1e",
-    "packages": [],
+    "content-hash": "bc07abacaa2f17c2b27d755925e79615",
+    "packages": [
+        {
+            "name": "ctyurk15/ajax-injections",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ctYurk15/ajax-injections.git",
+                "reference": "a507dad89fdf26557bf86a6c46277ae911b4db8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ctYurk15/ajax-injections/zipball/a507dad89fdf26557bf86a6c46277ae911b4db8f",
+                "reference": "a507dad89fdf26557bf86a6c46277ae911b4db8f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yurii Hrytsak"
+                }
+            ],
+            "description": "Composer package that allows you to access your Database with ajax-requests",
+            "support": {
+                "issues": "https://github.com/ctYurk15/ajax-injections/issues",
+                "source": "https://github.com/ctYurk15/ajax-injections/tree/v1.2.0"
+            },
+            "time": "2022-06-04T12:33:44+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
@@ -16,5 +59,5 @@
         "php": ">=5.4.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

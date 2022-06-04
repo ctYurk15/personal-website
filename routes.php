@@ -27,4 +27,15 @@ $routes = [
         'method' => 'GET',
         'action' => 'lightstone\app\controllers\Controller@news'
     ],
+    [
+        'pattern' => '/ajaxinjections',
+        'method' => 'GET',
+        'action' => 'lightstone\app\controllers\AjaxInjections@page'
+    ],
+    
+    [
+        'pattern' => '/ajaxinjections-api',
+        'method' => 'POST',
+        'action' => 'lightstone\app\controllers\AjaxInjections@api'
+    ],
 ];

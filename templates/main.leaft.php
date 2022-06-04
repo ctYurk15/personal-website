@@ -5,7 +5,7 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="resources/main_styles.css">
+        <link rel="stylesheet" href="resources/css/main_styles.css">
         <title>{@ $TITLE @}</title>
     </head>
     <body>
@@ -22,19 +22,19 @@
 
             <div class="pages">
                 <div class="page" data-page="bio">
-                    <h4>About me</h4>
+                    <h2>About me</h2>
                     <img src="resources/images/programmer.png">
                 </div>
                 <div class="page" data-page="projects">
-                    <h4>Personal projects</h4>
+                    <h2>Personal projects</h2>
                     <img src="resources/images/projects.png">
                 </div>
                 <div class="page" data-page="news">
-                    <h4>News</h4>
+                    <h2>News</h2>
                     <img src="resources/images/news.png">
                 </div>
             </div>
         </div>
     </body>
-    <script src="resources/main_script.js"></script>
+    <script src="resources/js/main_script.js"></script>
 </html>

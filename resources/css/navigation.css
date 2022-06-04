@@ -1,7 +1,7 @@
 .navigation-back-container
 {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 5px;
     height: 5vh;
 }
@@ -21,16 +21,3 @@
     cursor: pointer;
 }
 
-.bio-container
-{
-    width: calc(100% - 40px);
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.bio-avatar-img
-{
-    margin: 25px;
-}

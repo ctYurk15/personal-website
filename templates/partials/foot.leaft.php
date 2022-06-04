@@ -1,3 +1,3 @@
     </body>
-    <script src="resources/pages_script.js"></script>
+    <script src="resources/js/pages_scripts.js"></script>
 </html>

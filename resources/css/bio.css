@@ -1,0 +1,52 @@
+.bio-container
+{
+    width: calc(100% - 40px);
+    height: 99vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-right: 20px;
+    margin-left: 20px;
+    grid-gap: 10px;
+}
+
+.bio-avatar-img
+{
+    margin: 25px;
+    margin-top: 0px;
+}
+
+.bio-info-container
+{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.bio-info-container-head
+{
+    font-weight: bold;
+}
+
+.bio-contanct-container
+{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+.bio-contanct-container img
+{
+    padding: 5px;
+    width: 90%;
+}
+
+.bio-contanct-container:hover
+{
+    background-color: #efe1cf;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

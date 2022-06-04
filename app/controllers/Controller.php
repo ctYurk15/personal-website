@@ -34,7 +34,7 @@ class Controller
         echo $this->viewer->content('pages/bio');
     }
 
-    public function projects()
+    public function projects($page_number = null)
     {
         $this->viewer->set('PAGE_STYLESHEET', 'projects.css');
         echo $this->viewer->content('pages/projects');

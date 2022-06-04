@@ -18,6 +18,11 @@ $routes = [
         'action' => 'lightstone\app\controllers\Controller@projects'
     ],
     [
+        'pattern' => '/projects/{page}',
+        'method' => 'GET',
+        'action' => 'lightstone\app\controllers\Controller@projects'
+    ],
+    [
         'pattern' => '/news',
         'method' => 'GET',
         'action' => 'lightstone\app\controllers\Controller@news'

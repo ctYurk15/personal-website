@@ -76,6 +76,7 @@ body
     background-color: #efe1cf;
     cursor: pointer;
     transition: 0.3s ease;
+    box-shadow: 1px 1px 8px #c8bcae;
 }
 
 /* Works on Chrome, Edge, and Safari */

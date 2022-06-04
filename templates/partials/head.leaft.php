@@ -5,9 +5,9 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="resources/css/main_styles.css">
-        <link rel="stylesheet" href="resources/css/navigation.css">
-        <link rel="stylesheet" href="resources/css/{@ $PAGE_STYLESHEET @}">
+        <link rel="stylesheet" href="{@ $ROOT_URL @}resources/css/main_styles.css">
+        <link rel="stylesheet" href="{@ $ROOT_URL @}resources/css/navigation.css">
+        <link rel="stylesheet" href="{@ $ROOT_URL @}resources/css/{@ $PAGE_STYLESHEET @}">
         <title>{@ $TITLE @}</title>
     </head>
     <body>

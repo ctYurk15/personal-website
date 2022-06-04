@@ -4,6 +4,8 @@ namespace lightstone\app\controllers;
 
 use lightstone\app\Leaft;
 use lightstone\models\PersonalDataModel;
+use lightstone\models\ProjectsModel;
+use lightstone\models\NewsModel;
 
 class Controller
 {
@@ -36,18 +38,27 @@ class Controller
 
         $this->viewer->set('PAGE_STYLESHEET', 'bio.css');
         $this->viewer->set('BIO', $personal_data_content);
+
         echo $this->viewer->content('pages/bio');
     }
 
     public function projects($page_number = null)
     {
+        $projects_content = $this->getProjectsContent();
+
         $this->viewer->set('PAGE_STYLESHEET', 'projects.css');
+        $this->viewer->set('PROJECTS', $projects_content);
+
         echo $this->viewer->content('pages/projects');
     }
 
     public function news()
     {
+        $news_content = $this->getNewsContent();
+
         $this->viewer->set('PAGE_STYLESHEET', 'news.css');
+        $this->viewer->set('NEWS', $news_content);
+
         echo $this->viewer->content('pages/news');
     }
 
@@ -87,6 +98,42 @@ class Controller
         {
             $this->viewer->set('VALUE', $personal_column);
             $content .= $this->viewer->content('partials/bio-part');
+        }
+
+        return $content;
+    }
+
+    private function getProjectsContent()
+    {
+        $content = '';
+
+        $projects = ProjectsModel::all();
+        foreach($projects as $project)
+        {
+            $this->viewer->set('PROJECT_INFO', [
+                'name' => $project->get('name'),
+                'description' => $project->get('description'),
+                'github' => $project->get('github'),
+            ]);
+            $content .= $this->viewer->content('partials/project-part');
+        }
+
+        return $content;
+    }
+
+    private function getNewsContent()
+    {
+        $content = '';
+
+        $news = NewsModel::all();
+        foreach($news as $news_record)
+        {
+            $this->viewer->set('NEWS_RECORD', [
+                'title' => $news_record->get('title'),
+                'date' => $news_record->get('date'),
+                'content' => $news_record->get('content'),
+            ]);
+            $content .= $this->viewer->content('partials/news-part');
         }
 
         return $content;

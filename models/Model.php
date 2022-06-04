@@ -27,7 +27,7 @@ class Model
         //if(static::$conn == null) static::init_conn();
 
         $query = 'SELECT * FROM '.static::$table.'';
-        $query .= ($where_clause == '') ? '' : 'WHERE '.$where_clause;
+        $query .= ($where_clause == '') ? '' : ' WHERE '.$where_clause;
 
         $records_data = static::$conn->query($query);
         while($record_data = $records_data->fetch_array())

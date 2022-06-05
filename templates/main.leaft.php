@@ -21,15 +21,15 @@
             </div>
 
             <div class="pages">
-                <div class="page" data-page="bio">
+                <div class="page" data-page="{@ $ROOT_URL @}bio">
                     <h2>About me</h2>
                     <img src="resources/images/programmer.png">
                 </div>
-                <div class="page" data-page="projects">
+                <div class="page" data-page="{@ $ROOT_URL @}projects">
                     <h2>Personal projects</h2>
                     <img src="resources/images/projects.png">
                 </div>
-                <div class="page" data-page="news">
+                <div class="page" data-page="{@ $ROOT_URL @}news">
                     <h2>News</h2>
                     <img src="resources/images/news.png">
                 </div>

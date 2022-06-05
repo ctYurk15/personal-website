@@ -1,8 +1,7 @@
 function redirectToPage()
 {
     const page = this.attributes.getNamedItem('data-page').value;
-    const url = window.location.toString()+page;
-    window.location.replace(url);
+    window.location.replace(page);
 }
 
 const page_elements = document.getElementsByClassName('page');

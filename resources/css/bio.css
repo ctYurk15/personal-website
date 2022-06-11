@@ -51,3 +51,22 @@
     transition: 0.3s ease;
     box-shadow: 1px 1px 8px #c8bcae;
 }
+
+@media screen and (max-width: 1000px)
+{
+    .bio-container
+    {
+        grid-template-columns: 1fr;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .bio-container
+    {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}

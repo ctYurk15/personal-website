@@ -32,3 +32,35 @@
     transition: 0.3s ease;
     box-shadow: 1px 1px 8px #c8bcae;
 }
+
+@media screen and (max-width: 1200px)
+{
+    .projects-container
+    {
+        grid-template-columns: repeat(4, 1fr);
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .projects-container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px)
+{
+    .projects-container
+    {
+        grid-template-columns: 1fr;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}

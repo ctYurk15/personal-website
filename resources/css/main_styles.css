@@ -93,3 +93,23 @@ body
     border-radius: 20px;
     border: 0px solid transparent;
 }
+
+@media screen and (max-width: 1200px)
+{
+    .pages
+    {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .pages
+    {
+        grid-template-columns: 1fr;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
